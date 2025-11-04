@@ -1,0 +1,7 @@
+{
+  "name": "bluewhale-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
