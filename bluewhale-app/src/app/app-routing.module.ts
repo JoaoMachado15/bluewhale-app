@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'schedule',
+    loadChildren: () => import('./pages/schedule/schedule.module').then( m => m.SchedulePageModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./pages/support/support.module').then( m => m.SupportPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({
