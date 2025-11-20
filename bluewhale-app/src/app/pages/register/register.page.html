@@ -1,0 +1,56 @@
+<ion-content class="auth-screen">
+  <div class="auth-form-section">
+    <div class="auth-title-subtitle">
+      <h1 class="auth-title">Create Account</h1>
+      <p class="auth-subtitle">{{text}}</p>
+    </div>
+
+    <div class="auth-name">
+      <h1>Name</h1>
+      <ion-item class="auth-item" lines="none">
+        <ion-input placeholder="Full Name"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="auth-email">
+      <h1>Email</h1>
+      <ion-item class="auth-item" lines="none">
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="auth-password">
+      <h1>Password</h1>
+      <ion-item class="auth-item" lines="none">
+        <ion-input placeholder="Password" type="password"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="terms-row">
+      <ion-checkbox slot="start"></ion-checkbox>
+      <p>I agree to the <a href="#">Terms & Conditions</a></p>
+    </div>
+
+    <ion-button expand="block" class="auth-btn" (click)="onSubmit()">
+      Register
+    </ion-button>
+
+    <div class="auth-divider">
+      <div class="auth-divider-line"></div>
+      OR
+      <div class="auth-divider-line"></div>
+    </div>
+
+    <div class="auth-google">
+      <button class="google-btn" (click)="googleRegister()">
+        <img src="../../../assets/icon/GoogleIcon.svg" alt="Google logo" />
+        Google
+      </button>
+    </div>
+
+    <div class="auth-bottom-text">
+      Already have an account?
+      <a (click)="goToLogin()">Sign in</a>
+    </div>
+  </div>
+</ion-content>

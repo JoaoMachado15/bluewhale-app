@@ -3,29 +3,45 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
+    path: 'home',
+    loadChildren: () =>
+      import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./pages/login/login.page').then(m => m.LoginPage)
+  },
+  {
+    path: 'register',
+    loadComponent: () =>
+      import('./pages/register/register.page').then(m => m.RegisterPage)
+  },
+  // se quiseres manter:
+  {
     path: 'settings',
-    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+    loadComponent: () =>
+      import('./pages/settings/settings.page').then(m => m.SettingsPage)
   },
   {
     path: 'schedule',
-    loadChildren: () => import('./pages/schedule/schedule.module').then( m => m.SchedulePageModule)
+    loadComponent: () =>
+      import('./pages/schedule/schedule.page').then(m => m.SchedulePage)
   },
   {
     path: 'support',
-    loadChildren: () => import('./pages/support/support.module').then( m => m.SupportPageModule)
+    loadComponent: () =>
+      import('./pages/support/support.page').then(m => m.SupportPage)
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    loadComponent: () =>
+      import('./pages/profile/profile.page').then(m => m.ProfilePage)
   },
 ];
 
@@ -35,4 +51,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

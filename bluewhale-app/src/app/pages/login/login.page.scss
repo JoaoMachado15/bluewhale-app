@@ -1,0 +1,159 @@
+:host {
+  ion-content.auth-screen {
+    --background: var(--ion-color-primary);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* TOP SECTION */
+.auth-top {
+  width: 100%;
+  height: 14em;
+  background-image: url("../../../assets/BG.svg");
+  border-bottom-left-radius: 20em;
+  border-bottom-right-radius: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    width: 25%;
+  }
+}
+
+/* FORM SECTION (igual ao register) */
+.auth-form-section {
+  flex: 1;
+  padding: 1em 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TITLE BLOCK */
+.auth-title-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.auth-title {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  color: #c7d4e5;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* LABELS (same as register) */
+.auth-name h1,
+.auth-email h1,
+.auth-password h1 {
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* INPUTS (same as register) */
+.auth-item {
+  --background: #ffffff;
+  --border-radius: 14px;
+
+  margin-bottom: 1.2em;
+
+  ion-input {
+    font-size: 1em;
+  }
+}
+
+/* FORGOT PASSWORD ROW */
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+
+  h1 {
+    color: #ffffff;
+    font-size: 1.4em;
+    margin: 0;
+  }
+}
+
+.forgot-btn {
+  background: none;
+  border: none;
+  color: #c7d4e5;
+  font-size: 13px;
+}
+
+/* MAIN BUTTON */
+.auth-btn {
+  --background: var(--ion-color-secondary);
+  --border-radius: 14px;
+  height: 48px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* DIVIDER */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
+  color: var(--ion-color-secondary-tint);
+  font-size: 12px;
+}
+
+.auth-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--ion-color-tertiary-shade);
+}
+
+/* GOOGLE BUTTON */
+.auth-google {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: var(--ion-color-tertiary-shade);
+  padding: 1em 2.2em;
+  gap: 1em;
+  width: fit-content;
+  margin: 0 auto;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* BOTTOM TEXT */
+.auth-bottom-text {
+  text-align: center;
+  color: #b9c7da;
+  margin-top: 16px;
+
+  a {
+    color: #4aa1ff;
+  }
+}

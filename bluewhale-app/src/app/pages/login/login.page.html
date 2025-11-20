@@ -1,0 +1,64 @@
+<ion-content class="auth-screen">
+
+  <!-- TOPO (azul) -->
+  <div class="auth-top">
+    <img src="../../../assets/icon/ICON.svg" alt="blue whale" />
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <div class="auth-form-section">
+
+    <div class="auth-title-subtitle">
+      <h1 class="auth-title">Welcome Back</h1>
+      <p class="auth-subtitle">Sign in to continue</p>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="auth-email">
+      <h1>Email</h1>
+      <ion-item class="auth-item" lines="none">
+        <ion-input placeholder="you@gmail.com" type="email"></ion-input>
+      </ion-item>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="auth-password">
+      <div class="field-row">
+        <h1>Password</h1>
+        <button class="forgot-btn">Forgot?</button>
+      </div>
+
+      <ion-item class="auth-item" lines="none">
+        <ion-input placeholder="Enter your password" type="password"></ion-input>
+      </ion-item>
+    </div>
+
+    <!-- BUTTON -->
+    <ion-button expand="block" class="auth-btn" (click)="onSubmit()">
+      Sign In
+    </ion-button>
+
+    <!-- DIVIDER -->
+    <div class="auth-divider">
+      <div class="auth-divider-line"></div>
+      OR
+      <div class="auth-divider-line"></div>
+    </div>
+
+    <!-- GOOGLE BUTTON -->
+    <div class="auth-google">
+      <button class="google-btn" (click)="googleLogin()">
+        <img src="../../../assets/icon/GoogleIcon.svg" alt="Google logo" />
+        Google
+      </button>
+    </div>
+
+    <!-- BOTTOM TEXT -->
+    <div class="auth-bottom-text">
+      Don’t have an account?
+      <a (click)="goToRegister()">Register</a>
+    </div>
+
+  </div>
+
+</ion-content>

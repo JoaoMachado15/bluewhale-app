@@ -1,0 +1,153 @@
+:host {
+  ion-content.auth-screen {
+    --background: var(--ion-color-primary);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ==== AUTH FULLSCREEN LAYOUT ==== */
+
+/* FORM SECTION */
+.auth-form-section {
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1em 1.6em;
+  justify-content: center;
+  
+}
+
+
+/* TITLES */
+.auth-title-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.auth-title {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  color: #c7d4e5;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* INPUT FIELDS */
+
+.auth-item {
+  --background: #ffffff;
+  --border-radius: 14px;
+  
+
+  ion-input {
+   font-size: 1em;
+  }
+}
+
+.auth-name h1{
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.auth-email h1{
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.auth-password h1{
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+
+/* TERMS & CONDITIONS */
+.terms-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d0d9ea;
+  font-size: 12px;
+  margin-top: .5em;
+  margin-bottom: 2em;
+
+
+  a {
+    color: #4aa1ff;
+    text-decoration: none;
+  }
+}
+
+/* MAIN BUTTON */
+.auth-btn {
+  --background: #2d8edf;
+  --border-radius: 14px;
+  height: 48px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* DIVIDER */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 20px;
+  font-size: 12px;
+  color: #b0bed2;
+}
+
+.auth-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #42526b;
+}
+
+/* GOOGLE BUTTON */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: var(--ion-color-tertiary-shade);
+  padding: 1em 2.2em;
+  gap: 1em;
+
+  width: fit-content;      
+  margin: 0 auto;   
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* BOTTOM TEXT */
+.auth-bottom-text {
+  text-align: center;
+  color: #b9c7da;
+  font-size: 13px;
+  margin-top: 10px;
+
+  a {
+    color: #4aa1ff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
