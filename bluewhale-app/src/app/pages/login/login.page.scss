@@ -1,6 +1,6 @@
 :host {
   ion-content.auth-screen {
-    --background: var(--ion-color-primary);
+    --background: var(--ion-color-primary)!important;
     height: 100vh;
     display: flex;
     flex-direction: column;

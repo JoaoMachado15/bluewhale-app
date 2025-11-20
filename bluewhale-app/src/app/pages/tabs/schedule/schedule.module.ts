@@ -13,8 +13,9 @@ import { SchedulePage } from './schedule.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SchedulePageRoutingModule
-  ],
-  declarations: [SchedulePage]
+    SchedulePageRoutingModule,
+    SchedulePage
+  ]
+
 })
 export class SchedulePageModule {}

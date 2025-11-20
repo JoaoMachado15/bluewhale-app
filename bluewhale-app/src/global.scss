@@ -43,8 +43,16 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+/* BACKGROUND GLOBAL PARA TODA A APP */
+ion-app, ion-content {
+  --background: transparent !important;
+}
+
+body, ion-app {
+  background-image: url("/assets/BG.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 :root{
@@ -69,3 +77,5 @@ body{
     --ion-color-tertiary-shade: #F2F4FF;
     --ion-color-tertiary-tint: #ffdb33; 
 }
+
+

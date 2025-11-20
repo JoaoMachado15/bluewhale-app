@@ -20,7 +20,7 @@ export class LoginPage {
 
   onSubmit() {
     // protótipo estático → só navega para "home"
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/tabs/dashboard');
   }
 
   goToRegister() {
